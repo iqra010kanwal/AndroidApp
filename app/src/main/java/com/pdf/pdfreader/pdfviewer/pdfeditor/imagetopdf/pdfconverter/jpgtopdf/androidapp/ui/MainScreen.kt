@@ -13,30 +13,16 @@ class MainScreen : AppCompatActivity() {
         setContentView(R.layout.activity_main_screen)
 
         questions.setOnClickListener {
-
-            startActivity(Intent(this,MainActivity::class.java ))
-
-
+            startActivity(Intent(this,SingleFrameActivity::class.java ))
         }
         questions1.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java ))
-
-
-
-
+            startActivity(Intent(this,QuestionNoThreeAct::class.java ))
         }
         questions2.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java ))
-
-
+            startActivity(Intent(this,SplashActivity::class.java ))
         }
         questions3.setOnClickListener {
             startActivity(Intent(this,MainActivity::class.java ))
-
-
-
-
         }
-
     }
 }

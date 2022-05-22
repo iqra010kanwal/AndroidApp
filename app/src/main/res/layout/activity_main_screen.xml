@@ -6,15 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainScreen">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:background="@color/purple_700"
+        app:title="Main Sscreem"
+        app:titleTextColor="@color/white"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/questions"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_margin="20dp"
         app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/questions1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -33,6 +46,9 @@
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/questions2"
         app:cardBackgroundColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +60,7 @@
             android:layout_height="wrap_content"
 
             android:layout_gravity="center"
-            android:text="questions no 01"
+            android:text="questions no 02"
             android:textColor="@color/white"
             android:textSize="15dp" />
 
@@ -54,8 +70,10 @@
         android:id="@+id/questions2"
         android:layout_width="0dp"
         android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/questions3"
         android:layout_margin="20dp"
         android:layout_marginTop="124dp"
+        app:cardCornerRadius="10dp"
         app:cardBackgroundColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
@@ -68,7 +86,7 @@
             android:layout_height="wrap_content"
 
             android:layout_gravity="center"
-            android:text="questions no 01"
+            android:text="questions no 03"
             android:textColor="@color/white"
             android:textSize="15dp" />
 
@@ -80,6 +98,7 @@
         android:layout_height="80dp"
         android:layout_margin="20dp"
         app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +110,7 @@
             android:layout_height="wrap_content"
 
             android:layout_gravity="center"
-            android:text="questions no 01"
+            android:text="questions no 04"
             android:textColor="@color/white"
             android:textSize="15dp" />
 

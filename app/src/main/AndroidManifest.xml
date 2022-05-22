@@ -13,18 +13,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
         <activity
+            android:name=".ui.QuestionNoThreeAct"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SingleFrameActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".ui.SecodQuestionActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MainScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
