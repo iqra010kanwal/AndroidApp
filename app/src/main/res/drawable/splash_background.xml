@@ -5,6 +5,6 @@
     <item
         android:drawable="@drawable/bg_gradient"/>
 
-<item android:drawable="@drawable/ic_launcher_background" android:width="@dimen/_15sdp"
-    android:height="@dimen/_15sdp"/>
+<item android:drawable="@drawable/ic_launcher_background" android:width="@dimen/_5sdp"
+    android:height="@dimen/_5sdp"/>
 </layer-list>
